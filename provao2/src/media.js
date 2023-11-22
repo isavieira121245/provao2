@@ -17,10 +17,12 @@ alert(`Média: ${mediaCalculada.toFixed(1)} - Reprovado`);
 
 else if (mediaCalculada >= 4 && mediaCalculada < 6) {
                                           alert(`Média: ${mediaCalculada.toFixed(1)} - Recuperação`);
-                                              } else {
+} 
+
+else {
                                                     alert(`Média: ${mediaCalculada.toFixed(1)} - Aprovado`);
-                                                        }
-                                                          };
+                                                   }
+                                                   };
 
                                                             return (
                                                                 <div>
