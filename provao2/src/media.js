@@ -34,8 +34,7 @@ else if (mediaCalculada >= 4 && mediaCalculada < 6) {
                                                                                                                                 type="number"
                                                                                                                                         placeholder="Nota 2"
                                                                                                                                                 value={nota2}
-                                                                                                                                                        onChange={(e) => setNota2(Number(e.target.value))}
-                                                                                                                                                              />
+                                                                                                                                                        onChange={(e) => setNota2(Number(e.target.value))}/>
                                                                                                                                                                     <input
                                                                                                                                                                             type="number"
                                                                                                                                                                                     placeholder="Nota 3"
