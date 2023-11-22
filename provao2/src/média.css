@@ -24,6 +24,3 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-```
-
-Certifique-se de que o arquivo `media.css` esteja na mesma pasta que o arquivo `media.js`. Isso permitirá que os estilos sejam aplicados ao componente `Media` quando ele for utilizado na aplicação.
