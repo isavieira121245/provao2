@@ -5,7 +5,7 @@ import Media from './componentes/media';
 function App() {
   return (
     <div className="App">
-      <h1>Calcular Média de Notas</h1>
+      <h1>Calculadora</h1>
       <Media />
     </div>
   );
