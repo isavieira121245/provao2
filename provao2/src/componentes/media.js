@@ -30,21 +30,21 @@ else {
       type="number"
       placeholder="Nota 1"
       value={nota1}
-      onChange={(e) => setNota1(Number(e.target.value))}
+      onChangeText={(e) => setNota1(Number(e.target.value))}
       />
         
       <input
       type="number"
       placeholder="Nota 2"
       value={nota2}
-      onChange={(e) => setNota2(Number(e.target.value))}
+      onChangeText={(e) => setNota2(Number(e.target.value))}
       />
 
      <input
       type="number"
       placeholder="Nota 3"
       value={nota3}
-      onChange={(e) => setNota3(Number(e.target.value))}
+      onChangeText={(e) => setNota3(Number(e.target.value))}
       />
 
       <button onClick={calcularMedia}>Calcular Média</button>
