@@ -16,35 +16,35 @@ alert(`Média: ${mediaCalculada.toFixed(1)} - Reprovado`);
 } 
 
 else if (mediaCalculada >= 4 && mediaCalculada < 6) {
-                                          alert(`Média: ${mediaCalculada.toFixed(1)} - Recuperação`);
+ alert(`Média: ${mediaCalculada.toFixed(1)} - Recuperação`);
 } 
 
 else {
-                                                    alert(`Média: ${mediaCalculada.toFixed(1)} - Aprovado`);
-                                                   }
-                                                   };
-
-                                                            return (
-                                                                <div>
-                                                                      <h2>Calculadora de Média</h2>
-                                                                            <input
-                                                                                    type="number"
-                                                                                            placeholder="Nota 1"
-                                                                                                    value={nota1}
-                                                                                                            onChange={(e) => setNota1(Number(e.target.value))}/>
-                                                                                                                        <input
-                                                                                                                                type="number"
-                                                                                                                                        placeholder="Nota 2"
-                                                                                                                                                value={nota2}
-                                                                                                                                                        onChange={(e) => setNota2(Number(e.target.value))}/>
-                                                                                                                                                                    <input
-                                                                                                                                                                            type="number"
+ alert(`Média: ${mediaCalculada.toFixed(1)} - Aprovado`);
+}
+  };
+ return (
+ <div>
+         <h2>Calculadora de Média</h2>
+     <input
+      type="number"
+       placeholder="Nota 1"
+      value={nota1}
+        onChange={(e) => setNota1(Number(e.target.value))}/>
+        
+        <input
+    type="number"
+      placeholder="Nota 2"
+   value={nota2}
+           onChange={(e) => setNota2(Number(e.target.value))}/>
+     <input
+      type="number"
                                                                                                                                                                                     placeholder="Nota 3"
-                                                                                                                                                                                            value={nota3}
-                                                                                                                                                                                                    onChange={(e) => setNota3(Number(e.target.value))}/>
-                                                                                                                                                                                                                <button onClick={calcularMedia}>Calcular Média</button>
-                                                                                                                                                                                                                    </div>
-                                                  );
-                                                    };
+      value={nota3}
+      onChange={(e) => setNota3(Number(e.target.value))}/>
+      <button onClick={calcularMedia}>Calcular Média</button>
+  </div>
+ );
+ };
 
                                                                                                                                                                                                                       export default Media;
