@@ -12,15 +12,15 @@ const mediaCalculada = (nota1 + nota2 + nota3) / 3;
 setMedia(mediaCalculada);
 if (mediaCalculada < 4) {
 
-alert(`Média: ${mediaCalculada.toFixed(1)} - Reprovado`);
+alert(`Média: ${mediaCalculada.parseFloat(1)} - Reprovado`);
 } 
 
 else if (mediaCalculada >= 4 && mediaCalculada < 6) {
- alert(`Média: ${mediaCalculada.toFixed(1)} - Recuperação`);
+ alert(`Média: ${mediaCalculada.parseFloat(1)} - Recuperação`);
 } 
 
 else {
- alert(`Média: ${mediaCalculada.toFixed(1)} - Aprovado`);
+ alert(`Média: ${mediaCalculada.parseFloat(1)} - Aprovado`);
 }
   };
  return (
@@ -39,7 +39,7 @@ else {
            onChange={(e) => setNota2(Number(e.target.value))}/>
      <input
       type="number"
-                                                                                                                                                                                    placeholder="Nota 3"
+      placeholder="Nota 3"
       value={nota3}
       onChange={(e) => setNota3(Number(e.target.value))}/>
       <button onClick={calcularMedia}>Calcular Média</button>
