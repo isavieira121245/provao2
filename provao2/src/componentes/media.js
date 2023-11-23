@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 const Media = () => {
-const [nota1, setNota1] = useState();   
-const [nota2, setNota2] = useState();
-const [nota3, setNota3] = useState();
-const [media, setMedia] = useState();
+const [nota1, setNota1] = useState(0);   
+const [nota2, setNota2] = useState(0);
+const [nota3, setNota3] = useState(0);
+const [media, setMedia] = useState(0);
 
 const calcularMedia = () => {
 const mediaCalculada = (nota1 + nota2 + nota3) / 3;
@@ -27,32 +27,24 @@ else {
  <div>
          <h2>Calculadora de Média</h2>
      <input
-      keyboardType="number"
-      placeholder="Nota 1"
+      type="number"
+       placeholder="Nota 1"
       value={nota1}
-      onChangeText={(e) => setNota1(Number(e.target.value))
-      }
-      />
+        onChange={(e) => setNota1(Number(e.target.value))}/>
         
-      <input
-      keyboardType="number"
+        <input
+    type="number"
       placeholder="Nota 2"
-      value={nota2}
-      onChangeText={(e) => setNota2(Number(e.target.value))
-      }
-      />
-
+   value={nota2}
+           onChange={(e) => setNota2(Number(e.target.value))}/>
      <input
-      keyboardType="number"
+      type="number"
       placeholder="Nota 3"
       value={nota3}
-      onChangeText={(e) => setNota3(Number(e.target.value))
-      }
-      />
-
+      onChange={(e) => setNota3(Number(e.target.value))}/>
       <button onClick={calcularMedia}>Calcular Média</button>
   </div>
  );
  };
 
-  export default Media;
+                                                                                                                                                                                                                      export default Media;
