@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 const Media = () => {
-const [nota1, setNota1] = useState(0);   
-const [nota2, setNota2] = useState(0);
-const [nota3, setNota3] = useState(0);
-const [media, setMedia] = useState(0);
+const [nota1, setNota1] = useState();   
+const [nota2, setNota2] = useState();
+const [nota3, setNota3] = useState();
+const [media, setMedia] = useState();
 
 const calcularMedia = () => {
 const mediaCalculada = (nota1 + nota2 + nota3) / 3;
