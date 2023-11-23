@@ -28,23 +28,28 @@ else {
          <h2>Calculadora de Média</h2>
      <input
       type="number"
-       placeholder="Nota 1"
+      placeholder="Nota 1"
       value={nota1}
-        onChange={(e) => setNota1(Number(e.target.value))}/>
+      onChange={(e) => setNota1(Number(e.target.value))}
+      />
         
-        <input
-    type="number"
+      <input
+      type="number"
       placeholder="Nota 2"
-   value={nota2}
-           onChange={(e) => setNota2(Number(e.target.value))}/>
+      value={nota2}
+      onChange={(e) => setNota2(Number(e.target.value))}
+      />
+
      <input
       type="number"
       placeholder="Nota 3"
       value={nota3}
-      onChange={(e) => setNota3(Number(e.target.value))}/>
+      onChange={(e) => setNota3(Number(e.target.value))}
+      />
+
       <button onClick={calcularMedia}>Calcular Média</button>
   </div>
  );
  };
 
-                                                                                                                                                                                                                      export default Media;
+  export default Media;
