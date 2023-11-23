@@ -27,21 +27,21 @@ else {
  <div>
          <h2>Calculadora de Média</h2>
      <input
-      type="number"
+      keyboardType="number"
       placeholder="Nota 1"
       value={nota1}
       onChangeText={(e) => setNota1(Number(e.target.value))}
       />
         
       <input
-      type="number"
+      keyboardType="number"
       placeholder="Nota 2"
       value={nota2}
       onChangeText={(e) => setNota2(Number(e.target.value))}
       />
 
      <input
-      type="number"
+      keyboardType="number"
       placeholder="Nota 3"
       value={nota3}
       onChangeText={(e) => setNota3(Number(e.target.value))}
